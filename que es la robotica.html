@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es la Robótica? - Explorando el Mundo de los Robots</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgKa9GKoucWOC-azxdyP3AkorjBDiLzvg4w&s');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .image-container figcaption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #0056b3;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Animación simple con JS */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¿Qué es la Robótica?</h1>
+        <p>Explorando el fascinante mundo de los robots y su impacto en nuestra sociedad</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Descubre el Mundo de la Robótica</h1>
+    </section>
+    
+    <section id="definicion" class="fade-in">
+        <h2>¿Qué es la Robótica?</h2>
+        <p>La robótica es una rama interdisciplinaria de la ingeniería y la ciencia que se dedica al diseño, construcción, operación y uso de robots. Combina disciplinas como la mecánica, la electrónica, la informática, la inteligencia artificial, la ingeniería de control y la física.</p>
+        <p>El objetivo principal de la robótica es crear máquinas que puedan asistir y ayudar a los humanos de diversas maneras. Los robots pueden utilizarse en muchas situaciones y para muchos propósitos, pero hoy en día muchos se utilizan en entornos peligrosos (incluida la inspección de materiales radiactivos, detección de bombas), procesos de fabricación, o donde los humanos no pueden sobrevivir (por ejemplo, en el espacio).</p>
+        <div class="image-container">
+            <img src="\imagenes\brazo robot.jpg" alt="Brazo robótico industrial en funcionamiento">
+            <figcaption>Brazo robótico utilizado en procesos de fabricación industrial</figcaption>
+        </div>
+    </section>
+    
+    <section id="componentes" class="fade-in">
+        <h2>Componentes Básicos de un Robot</h2>
+        <p>Los robots suelen constar de varios componentes esenciales que trabajan en conjunto para permitir su funcionamiento:</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>Estructura Mecánica</h3>
+                <p>El esqueleto del robot, que determina su forma, tamaño y capacidades de movimiento. Puede incluir articulaciones, brazos, ruedas o piernas.</p>
+            </div>
+            <div class="card">
+                <h3>Sistemas de Actuación</h3>
+                <p>Motores, pistones y otros mecanismos que permiten al robot moverse y interactuar con su entorno. Convierten la energía en movimiento físico.</p>
+            </div>
+            <div class="card">
+                <h3>Sensores</h3>
+                <p>Dispositivos que permiten al robot percibir su entorno. Pueden incluir cámaras, sensores de proximidad, sensores de temperatura, etc.</p>
+            </div>
+            <div class="card">
+                <h3>Sistema de Control</h3>
+                <p>El "cerebro" del robot, generalmente un microprocesador o computadora, que procesa información de los sensores y decide las acciones a tomar.</p>
+            </div>
+            <div class="card">
+                <h3>Fuente de Energía</h3>
+                <p>Baterías, conexión eléctrica o otros sistemas que proporcionan la energía necesaria para que el robot funcione.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tipos" class="fade-in">
+        <h2>Tipos de Robots</h2>
+        <p>Existen diversas clasificaciones de robots según su estructura, aplicación o nivel de autonomía. Algunos de los tipos más comunes son:</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>Robots Industriales</h3>
+                <p>Utilizados en líneas de montaje y procesos de fabricación. Suelen ser brazos robóticos programados para tareas repetitivas de alta precisión.</p>
+            </div>
+            <div class="card">
+                <h3>Robots de Servicio</h3>
+                <p>Diseñados para asistir a humanos en diversas tareas, como limpieza, entrega de materiales en hospitales o asistencia a personas mayores.</p>
+            </div>
+            <div class="card">
+                <h3>Robots Móviles</h3>
+                <p>Pueden moverse en su entorno mediante ruedas, patas u otros mecanismos. Incluyen drones y vehículos autónomos.</p>
+            </div>
+            <div class="card">
+                <h3>Robots Humanoides</h3>
+                <p>Diseñados para imitar la forma y movimientos humanos, facilitando la interacción con personas y entornos diseñados para humanos.</p>
+            </div>
+            <div class="card">
+                <h3>Robots Médicos</h3>
+                <p>Utilizados en cirugía, rehabilitación y cuidado de pacientes. Permiten mayor precisión y menores tiempos de recuperación.</p>
+            </div>
+        </div>
+        
+        <div class="image-container">
+        </div>
+    </section>
+    
+    <section id="aplicaciones" class="fade-in">
+        <h2>Aplicaciones de la Robótica</h2>
+        <p>La robótica tiene aplicaciones en prácticamente todos los sectores de la sociedad moderna. Algunas de las más importantes incluyen:</p>
+        
+        <ul>
+            <li><strong>Manufactura y producción:</strong> Automatización de líneas de ensamblaje, soldadura, pintura y control de calidad.</li>
+            <li><strong>Medicina:</strong> Cirugía de precisión, rehabilitación, prótesis inteligentes y telemedicina.</li>
+            <li><strong>Exploración:</strong> Robots espaciales, vehículos submarinos no tripulados y drones para exploración geográfica.</li>
+            <li><strong>Agricultura:</strong> Siembra, cosecha y monitoreo automatizado de cultivos.</li>
+            <li><strong>Logística:</strong> Almacenes automatizados, sistemas de clasificación y entrega de paquetes.</li>
+            <li><strong>Educación:</strong> Herramientas de aprendizaje interactivo y kits de robótica educativa.</li>
+            <li><strong>Entretenimiento:</strong> Efectos especiales en cine, parques temáticos y juguetes interactivos.</li>
+        </ul>
+        
+        <div class="image-container">
+            <img src="\imagenes\robot de cirugia.jpg" alt="Robot utilizado en cirugía médica">
+            <figcaption>Sistema robótico da Vinci utilizado en cirugía mínimamente invasiva</figcaption>
+        </div>
+    </section>
+    
+    <section id="futuro" class="fade-in">
+        <h2>El Futuro de la Robótica</h2>
+        <p>El campo de la robótica continúa evolucionando a un ritmo acelerado. Algunas tendencias y desarrollos futuros incluyen:</p>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>Colaboración Humano-Robot</h3>
+                <p>Desarrollo de cobots (robots colaborativos) que trabajan junto a humanos de forma segura y eficiente.</p>
+            </div>
+            <div class="card">
+                <h3>Inteligencia Artificial Avanzada</h3>
+                <p>Integración de machine learning y deep learning para robots más autónomos y capaces de aprender.</p>
+            </div>
+            <div class="card">
+                <h3>Robótica Blanda</h3>
+                <p>Desarrollo de robots con materiales flexibles que imitan organismos biológicos para aplicaciones médicas y de exploración.</p>
+            </div>
+            <div class="card">
+                <h3>Enjambres de Robots</h3>
+                <p>Sistemas donde múltiples robots simples colaboran para realizar tareas complejas de manera coordinada.</p>
+            </div>
+        </div>
+        
+        <p>La robótica seguirá transformando nuestra sociedad, con avances que mejorarán la calidad de vida, aumentarán la eficiencia en diversos sectores y abrirán nuevas posibilidades que hoy apenas podemos imaginar.</p>
+        
+        <div class="image-container">
+            <img src="\imagenes\robot 1.jpg" alt="Robot humanoide del futuro">
+            <figcaption>Visión artística de robots humanoides avanzados del futuro</figcaption>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ¿Qué es la Robótica?.</p>
+        <p>Sitio web educativo creado para explorar el fascinante mundo de la robótica.</p>
+    </footer>
+    
+    <script>
+        // Simple fade-in on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+        
+        // Trigger scroll event on load to check initial visible elements
+        window.addEventListener('load', () => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>

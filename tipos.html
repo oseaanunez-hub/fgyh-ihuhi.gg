@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Robots: Clasificación y Aplicaciones</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEq4w590SacBvith0NejYokXgYDtaUDXnrqg&s');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            text-align: center;
+            padding: 0 20px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .robot-type {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .robot-type h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        /* Animación simple con JS */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tipos de Robots: Clasificación y Aplicaciones</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    <section id="inicio" class="hero">
+        <h1>Explorando la Diversidad de Robots</h1>
+    </section>
+    
+    <section id="industriales" class="fade-in">
+        <h2>Robots Industriales</h2>
+        
+        <div class="robot-type">
+            <h3>Robots Articulados</h3>
+            <p>Los robots articulados son los más comunes en entornos industriales. Cuentan con múltiples articulaciones rotativas (desde 3 hasta 7 ejes) que les permiten movimientos complejos y precisos. Se utilizan principalmente para tareas de soldadura, pintura, ensamblaje y manipulación de materiales.</p>
+            <div class="image-container">
+                <img src="\imagenes\articulados.jpg" alt="Robot industrial articulado">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots SCARA</h3>
+            <p>Los robots SCARA (Selective Compliance Articulated Robot Arm) están diseñados para movimientos horizontales rápidos y precisos. Son ideales para tareas de montaje, inserción de componentes y manipulación de pequeñas piezas en la industria electrónica y automotriz.</p>
+            <div class="image-container">
+                <img src="\imagenes\robot scara.jpg" alt="Robot SCARA">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots Cartesianos</h3>
+            <p>También conocidos como robots de pórtico, estos sistemas se mueven a lo largo de tres ejes lineales (X, Y, Z). Ofrecen alta precisión en movimientos rectilíneos y se utilizan frecuentemente en aplicaciones de corte, soldadura 3D, impresión 3D y medición de piezas.</p>
+            <div class="image-container">
+                <img src="\imagenes\robot cartesiano.jpg" alt="Robot cartesiano">
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicio" class="fade-in">
+        <h2>Robots de Servicio</h2>
+        
+        <div class="robot-type">
+            <h3>Robots de Limpieza</h3>
+            <p>Estos robots autónomos están diseñados para realizar tareas domésticas o industriales de limpieza. Los más conocidos son las aspiradoras y limpiadores de piscinas automáticos, pero también existen robots para limpieza de ventanas, pisos y espacios públicos.</p>
+            <div class="image-container">
+                <img src="\imagenes\robot de limpieza.jpg" alt="Robot de limpieza">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots de Entrega y Logística</h3>
+            <p>Utilizados en almacenes, hospitales, hoteles y restaurantes, estos robots transportan mercancías, alimentos, medicamentos o documentos de forma autónoma. Optimizan procesos logísticos y reducen costos operativos.</p>
+            <div class="image-container">
+                <img src="\imagenes\logistica.jpg" alt="Robot de entrega">
+            </div>
+        </div>
+    </section>
+    
+    <section id="medicos" class="fade-in">
+        <h2>Robots Médicos y Quirúrgicos</h2>
+        
+        <div class="robot-type">
+            <h3>Robots Quirúrgicos</h3>
+            <p>Sistemas como el da Vinci permiten a los cirujanos realizar procedimientos mínimamente invasivos con mayor precisión, flexibilidad y control. Estos robots amplifican los movimientos del cirujano mientras filtran posibles temblores.</p>
+            <div class="image-container">
+                <img src="\imagenes\quirurgicos.jpg" alt="Robot quirúrgico">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots de Rehabilitación</h3>
+            <p>Diseñados para asistir en terapias físicas y procesos de rehabilitación, estos robots ayudan a pacientes con movilidad reducida a recuperar funciones motoras mediante ejercicios guiados y repetitivos con retroalimentación constante.</p>
+            <div class="image-container">
+                <img src="\imagenes\rehabilitacion.jpg" alt="Robot de rehabilitación">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots de Desinfección</h3>
+            <p>Especialmente relevantes en contextos hospitalarios, estos robots utilizan luz ultravioleta u otros métodos para desinfectar habitaciones y áreas comunes, reduciendo la propagación de infecciones nosocomiales.</p>
+            <div class="image-container">
+                <img src="\imagenes\desinfeccion.jpg" alt="Robot de desinfección">
+            </div>
+        </div>
+    </section>
+    
+    <section id="movilidad" class="fade-in">
+        <h2>Robots de Movilidad y Transporte</h2>
+        
+        <div class="robot-type">
+            <h3>Vehículos Autónomos</h3>
+            <p>Estos robots incluyen desde coches autoconducidos hasta drones de reparto. Utilizan sensores avanzados, GPS, visión artificial y algoritmos de inteligencia artificial para navegar y tomar decisiones en tiempo real.</p>
+            <div class="image-container">
+                <img src="\imagenes\vh autonomo.jpg" alt="Vehículo autónomo">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Drones</h3>
+            <p>Los vehículos aéreos no tripulados (UAV) tienen aplicaciones en fotografía, vigilancia, agricultura de precisión, entrega de paquetes y cartografía. Su versatilidad y capacidad para acceder a lugares difíciles los hace muy valiosos.</p>
+            <div class="image-container">
+                <img src="\imagenes\dron.jpg" alt="Dron">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots Subacuáticos</h3>
+            <p>Diseñados para operar en ambientes acuáticos, estos robots se utilizan para exploración marina, mantenimiento de infraestructuras subacuáticas, investigación científica y operaciones de rescate.</p>
+            <div class="image-container">
+                <img src="\imagenes\subacuaticos.jpg" alt="Robot subacuático">
+            </div>
+        </div>
+    </section>
+    
+    <section id="humanoides" class="fade-in">
+        <h2>Robots Humanoides y Sociales</h2>
+        
+        <div class="robot-type">
+            <h3>Robots Humanoides</h3>
+            <p>Diseñados para imitar la forma y movimientos humanos, estos robots pueden caminar, agarrar objetos e interactuar con entornos diseñados para personas. Se utilizan en investigación, asistencia y entretenimiento.</p>
+            <div class="image-container">
+                <img src="\imagenes\humanoide.jpg" alt="Robot humanoide">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots Sociales y de Companía</h3>
+            <p>Estos robots están diseñados para interactuar con humanos de manera natural, proporcionando companía, asistencia o entretenimiento. Algunos se utilizan en educación, cuidado de ancianos o como asistentes en espacios públicos.</p>
+            <div class="image-container">
+                <img src="\imagenes\sociales.jpg" alt="Robot social">
+            </div>
+        </div>
+    </section>
+    
+    <section id="especializados" class="fade-in">
+        <h2>Robots Especializados</h2>
+        
+        <div class="robot-type">
+            <h3>Robots Agrícolas</h3>
+            <p>Automatizan tareas como siembra, cosecha, control de plagas y monitoreo de cultivos. Utilizan sensores y visión artificial para identificar malezas, evaluar la madurez de los frutos y optimizar el uso de recursos.</p>
+            <div class="image-container">
+                <img src="\imagenes\agricola.jpg" alt="Robot agrícola">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots de Rescate y Búsqueda</h3>
+            <p>Diseñados para operar en entornos peligrosos o de difícil acceso después de desastres naturales o accidentes. Pueden tener forma de serpiente, arácnido o oruga para moverse entre escombros.</p>
+            <div class="image-container">
+                <img src="\imagenes\busqueda y rescate.jpg" alt="Robot de rescate">
+            </div>
+        </div>
+        
+        <div class="robot-type">
+            <h3>Robots Militares y de Seguridad</h3>
+            <p>Utilizados para vigilancia, desactivación de explosivos, reconocimiento y otras operaciones peligrosas que minimizan el riesgo para el personal humano. Incluyen vehículos terrestres no tripulados (UGV) y sistemas de vigilancia autónomos.</p>
+            <div class="image-container">
+                <img src="\imagenes\militar.jpg" alt="Robot militar">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tipos de Robots: Clasificación y Aplicaciones.</p>
+    </footer>
+    
+    <script>
+        // Simple fade-in on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+        
+        // Trigger scroll event on load to check initial visible elements
+        window.addEventListener('load', () => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>

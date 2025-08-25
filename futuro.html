@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Futuro de la Robótica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLoAzjLwRqU2MoJXiWf7vAa-4Y0UzldjE47Q&s');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Animación simple con JS */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Futuro de la Robótica</h1>
+    </header>
+   
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <h1>El Mañana Robótico</h1>
+    </section>
+    <section id="tendencias" class="fade-in">
+        <h2>Tendencias Futuras en Robótica</h2>
+        <p>El futuro de la robótica está marcado por avances revolucionarios que transformarán nuestra sociedad. Entre las tendencias más destacadas se encuentran la inteligencia artificial integrada, la robótica blanda (soft robotics), la colaboración humano-robot y la miniaturización de componentes.</p>
+        <div class="image-container">
+        </div>
+    </section>
+    <section id="ia" class="fade-in">
+        <h2>Inteligencia Artificial y Robots Autónomos</h2>
+        <p>La convergencia entre robótica e inteligencia artificial está creando máquinas capaces de aprender y adaptarse a entornos complejos. Los robots del futuro no solo ejecutarán tareas programadas, sino que podrán tomar decisiones autónomas basadas en el contexto y la experiencia acumulada.</p>
+        <div class="card-container">
+            <div class="card">
+                <h3>Aprendizaje Autónomo</h3>
+                <p>Robots que mejoran continuamente mediante algoritmos de aprendizaje automático.</p>
+            </div>
+            <div class="card">
+                <h3>Percepción Avanzada</h3>
+                <p>Sensores multidimensionales que permiten una comprensión completa del entorno.</p>
+            </div>
+            <div class="card">
+                <h3>Decisión Autónoma</h3>
+                <p>Capacidad de evaluar situaciones complejas y tomar decisiones independientes.</p>
+            </div>
+        </div>
+    </section>
+    <section id="social" class="fade-in">
+        <h2>Impacto Social y Económico</h2>
+        <p>La robótica avanzada transformará profundamente el mercado laboral, la economía y nuestra vida cotidiana. Mientras algunos empleos serán automatizados, surgirán nuevas oportunidades en campos que hoy apenas podemos imaginar. La colaboración entre humanos y robots será la norma en entornos laborales futuros.</p>
+        <div class="image-container">
+        </div>
+    </section>
+    <section id="etica" class="fade-in">
+        <h2>Consideraciones Éticas y Regulatorias</h2>
+        <p>El avance de la robótica plantea importantes cuestiones éticas sobre privacidad, seguridad, autonomía y el papel de los robots en la sociedad. Es crucial desarrollar marcos regulatorios que garanticen un desarrollo responsable de estas tecnologías, priorizando el bienestar humano y la equidad social.</p>
+        <div class="image-container">
+        </div>
+    </section>
+    <section id="vision" class="fade-in">
+        <h2>Visión 2050: Un Mundo Transformado</h2>
+        <p>Para mediados de siglo, los robots estarán integrados en todos los aspectos de nuestra vida: desde asistentes personales altamente capacitados hasta sistemas de infraestructura autónomos. La medicina, la educación, la exploración espacial y la sostenibilidad ambiental se verán revolucionadas por estas tecnologías.</p>
+        <div class="image-container">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 El Futuro de la Robótica. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Simple fade-in on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones de los Robots en la Sociedad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Animación simple con JS */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .application-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .application-card h3 {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aplicaciones de los Robots en la Sociedad</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <h1>Robots Transformando Nuestro Mundo</h1>
+    </section>
+    
+    <section id="medicina" class="fade-in">
+        <h2>Aplicaciones en Medicina</h2>
+        <div class="application-card">
+            <h3>Cirugía Robótica</h3>
+            <p>Los sistemas quirúrgicos robóticos como el da Vinci permiten a los cirujanos realizar procedimientos complejos con mayor precisión, menor invasión y tiempos de recuperación más rápidos.</p>
+            <div class="image-container">
+                <img src="\imagenes\robot de cirugia.jpg" alt="Robot quirúrgico">
+            </div>
+        </div>
+        <div class="application-card">
+            <h3>Rehabilitación</h3>
+            <p>Exoesqueletos robóticos y dispositivos de asistencia ayudan en la rehabilitación de pacientes con lesiones medulares o accidentes cerebrovasculares, permitiendo una recuperación más efectiva.</p>
+            <div class="image-container">
+                <img src="\imagenes\rehabilitacion.jpg" alt="Exoesqueleto robótico">
+            </div>
+        </div>
+    </section>
+    
+    <section id="industria" class="fade-in">
+        <h2>Aplicaciones Industriales</h2>
+        <div class="application-card">
+            <h3>Automoción</h3>
+            <p>Los brazos robóticos realizan tareas de soldadura, pintura y ensamblaje en líneas de producción con una precisión y velocidad imposibles para los humanos.</p>
+            <div class="image-container">
+                <img src="\imagenes\brazo robot.jpg" alt="Robots en línea de producción">
+            </div>
+        </div>
+        <div class="application-card">
+            <h3>Control de Calidad</h3>
+            <p>Sistemas de visión artificial integrados con robots permiten inspeccionar productos a alta velocidad, detectando defectos imperceptibles para el ojo humano.</p>
+            <div class="image-container">
+                <img src="\imagenes\inspeccion de calidad.jpg" alt="Robot de inspección de calidad">
+            </div>
+        </div>
+    </section>
+    
+    <section id="agricultura" class="fade-in">
+        <h2>Aplicaciones en Agricultura</h2>
+        <div class="application-card">
+            <h3>Agricultura de Precisión</h3>
+            <p>Robots autónomos realizan siembra, cosecha y control de plagas con máxima eficiencia, reduciendo el uso de agua, pesticidas y fertilizantes.</p>
+            <div class="image-container">
+                <img src="\imagenes\agricola.jpg" alt="Robot agrícola">
+            </div>
+        </div>
+        <div class="application-card">
+            <h3>Monitoreo de Cultivos</h3>
+            <p>Drones equipados con sensores sobrevuelan campos para analizar el estado de los cultivos, identificar enfermedades y optimizar el riego.</p>
+            <div class="image-container">
+            </div>
+        </div>
+    </section>
+    
+    <section id="hogar" class="fade-in">
+        <h2>Aplicaciones Domésticas</h2>
+        <div class="application-card">
+            <h3>Aspiradoras Robotizadas</h3>
+            <p>Dispositivos como Roomba han revolucionado la limpieza del hogar, navegando de forma autónoma para mantener los suelos limpios con mínima intervención humana.</p>
+            <div class="image-container">
+                <img src="\imagenes\robot de limpieza.jpg" alt="Robot aspirador">
+            </div>
+        </div>
+        <div class="application-card">
+            <h3>Asistentes Personales</h3>
+            <p>Robots sociales como Jibo o Pepper ofrecen compañía, entretenimiento y asistencia a personas mayores o con necesidades especiales.</p>
+            <div class="image-container">
+            </div>
+        </div>
+    </section>
+    
+    <section id="logistica" class="fade-in">
+        <h2>Aplicaciones en Logística</h2>
+        <div class="application-card">
+            <h3>Almacenes Automatizados</h3>
+            <p>Amazon y otras empresas utilizan miles de robots Kiva para transportar estantes de productos, reduciendo drásticamente los tiempos de preparación de pedidos.</p>
+            <div class="image-container">
+                <img src="\imagenes\logistica.jpg" alt="Robots en almacén">
+            </div>
+        </div>
+        <div class="application-card">
+            <h3>Entregas Autónomas</h3>
+            <p>Robots terrestres y drones están siendo probados para realizar entregas de última milla, prometiendo reducir costos y tiempos de entrega.</p>
+            <div class="image-container">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Aplicaciones de Robótica.</p>
+    </footer>
+    <script>
+        // Simple fade-in on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+        
+        // Trigger fade-in on load for elements in viewport
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Robótica - Evolución y Momentos Clave</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .image-container figcaption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #007BFF;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid #007BFF;
+            border-radius: 50%;
+            top: 15px;
+            right: -13px;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+            text-align: right;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -13px;
+        }
+        .timeline-content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .timeline-content h3 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Animación simple con JS */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 21px;
+            }
+            .left, .right {
+                left: 0;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historia de la Robótica</h1>
+        <p>Un viaje a través del tiempo: desde los autómatas antiguos hasta la inteligencia artificial</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Explora la Evolución de la Robótica</h1>
+    </section>
+    
+    <section id="origenes" class="fade-in">
+        <h2>Los Orígenes de la Robótica</h2>
+        <p>La historia de la robótica se remonta a civilizaciones antiguas que soñaban con crear seres artificiales. Los primeros intentos de crear autómatas se encuentran en las leyendas griegas, como el mito de Pigmalión, y en ingenios mecánicos de civilizaciones como la griega, egipcia y china.</p>
+        
+        <p>Uno de los primeros autómatas documentados fue creado por el inventor griego Ctesibio de Alejandría en el siglo III a.C., quien desarrolló mecanismos con partes móviles accionadas por agua, aire o vapor. Herón de Alejandría, en el siglo I d.C., creó numerosos autómatas, incluyendo un teatro de marionetas automático y una máquina de vapor primitiva.</p>
+        
+        <div class="image-container">
+            <img src="\imagenes\mecanismo.jpg" alt="Mecanismos antiguos y engranajes">
+            <figcaption>Mecanismos antiguos que inspiraron los primeros autómatas</figcaption>
+        </div>
+    </section>
+    
+    <section id="primeros-robots" class="fade-in">
+        <h2>Primeros Robots y Autómatas</h2>
+        <p>Durante la Edad Media y el Renacimiento, la creación de autómatas se convirtió en una forma de arte y entretenimiento para la realeza. Artesanos e inventores crearon figuras mecánicas que podían realizar acciones sorprendentes para su época.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1495</h3>
+                    <p>Leonardo da Vinci diseña el "Caballero Mecánico", considerado el primer robot humanoide de la historia. Podía sentarse, mover los brazos y la cabeza.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1738</h3>
+                    <p>Jacques de Vaucanson crea su "Pato Digestivo", un autómata que podía comer granos, digerirlos y excretarlos, impresionando a las audiencias europeas.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1920</h3>
+                    <p>Karel Čapek introduce la palabra "robot" en su obra de teatro "R.U.R." (Robots Universales de Rossum), derivada de la palabra checa "robota" que significa trabajo forzado.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1928</h3>
+                    <p>Eric, el primer robot humanoide británico, es presentado en la Exposición de la Sociedad de Ingenieros Modelo en Londres. Podía hablar y moverse.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <img src="\imagenes\replica.jpg" alt="Réplica del caballero mecánico de Leonardo da Vinci">
+            <figcaption>Réplica moderna del Caballero Mecánico de Leonardo da Vinci</figcaption>
+        </div>
+    </section>
+    
+    <section id="era-moderna" class="fade-in">
+        <h2>La Era Moderna de la Robótica</h2>
+        <p>La segunda mitad del siglo XX marcó el comienzo de la robótica moderna, con avances tecnológicos que permitieron la creación de robots programables y la automatización industrial.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1954</h3>
+                    <p>George Devol patenta el primer robot programable, sentando las bases para el robot industrial moderno.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1961</h3>
+                    <p>Se instala el Unimate, el primer robot industrial, en una planta de General Motors en Nueva Jersey para manejar piezas metálicas calientes.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1973</h3>
+                    <p>La empresa alemana KUKA desarrolla el Famulus, el primer robot con seis ejes electromecánicos.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>1980s</h3>
+                    <p>Los robots comienzan a utilizarse masivamente en la industria automotriz, realizando tareas de soldadura, pintura y ensamblaje.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <img src="\imagenes\ultimate.jpg" alt="Robot industrial Unimate en una línea de producción">
+            <figcaption>El Unimate, primer robot industrial instalado en una fábrica de General Motors</figcaption>
+        </div>
+    </section>
+    
+    <section id="revolucion-digital" class="fade-in">
+        <h2>La Revolución Digital y la Robótica Avanzada</h2>
+        <p>A finales del siglo XX y principios del XXI, la revolución digital transformó la robótica, incorporando avances en computación, sensores e inteligencia artificial.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>1997</h3>
+                    <p>El robot Sojourner de la NASA explora la superficie de Marte, marcando un hito en la robótica espacial.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2000</h3>
+                    <p>Honda presenta ASIMO, uno de los robots humanoides más avanzados de su tiempo, capaz de caminar, correr y subir escaleras.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2005</h3>
+                    <p>Aparecen los primeros robots quirúrgicos da Vinci, revolucionando la cirugía de mínima invasión.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>2011</h3>
+                    <p>IBM Watson demuestra avances en inteligencia artificial al ganar el juego de Jeopardy! contra campeones humanos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <img src="\imagenes\asimo.jpg" alt="Robot humanoide ASIMO de Honda">
+            <figcaption>ASIMO, el robot humanoide desarrollado por Honda</figcaption>
+        </div>
+    </section>
+    
+    <section id="futuro" class="fade-in">
+        <h2>El Futuro de la Robótica</h2>
+        <p>La robótica continúa evolucionando a un ritmo acelerado, con investigaciones en inteligencia artificial, machine learning, robótica blanda y colaborativa que prometen transformar aún más nuestra sociedad.</p>
+        
+        <p>Algunas áreas de desarrollo futuro incluyen:</p>
+        <ul>
+            <li>Robots con inteligencia artificial avanzada capaces de aprender y adaptarse a entornos cambiantes</li>
+            <li>Robótica colaborativa (cobots) que trabajan codo a codo con humanos</li>
+            <li>Nanorobots para aplicaciones médicas dentro del cuerpo humano</li>
+            <li>Robots bioinspirados que imitan la naturaleza en su diseño y funcionamiento</li>
+            <li>Avances en robótica social para interactuar naturalmente con humanos</li>
+        </ul>
+        
+        <div class="image-container">
+            <img src="\imagenes\robot 2.jpg" alt="Concepto de robots futuros con inteligencia artificial">
+            <figcaption>Visión artística de robots futuros con inteligencia avanzada</figcaption>
+        </div>
+        
+        <p>La historia de la robótica demuestra cómo la creatividad humana y la innovación tecnológica han convergido para crear máquinas cada vez más sofisticadas que extienden nuestras capacidades y transforman nuestra forma de vivir y trabajar.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Historia de la Robótica.</p>
+        <p>Sitio web educativo creado para explorar la fascinante evolución de la robótica a través del tiempo.</p>
+    </footer>
+    
+    <script>
+        // Simple fade-in on scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+        
+        // Trigger scroll event on load to check initial visible elements
+        window.addEventListener('load', () => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>

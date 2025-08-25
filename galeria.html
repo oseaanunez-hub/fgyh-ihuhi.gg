@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Robótica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        /* Estilos para la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+        }
+        .gallery-caption h3 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        
+        /* Animación simple */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        
+        /* Filtros de categoría */
+        .category-filters {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .category-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .category-btn:hover {
+            background-color: #0056b3;
+        }
+        .category-btn.active {
+            background-color: #003d80;
+        }
+        
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Robótica</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="proyecto.html">Inicio</a></li>
+            <li><a href="que es la robotica.html">¿Qué es?</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="futuro.html">Futuro</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Explora el Mundo de la Robótica</h2>
+        
+        
+        <div class="gallery">
+            <!-- Imagen 1 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\brazo robot.jpg" alt="Brazo robótico industrial" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Industriales</h3>
+                    <p>Brazos robóticos utilizados en líneas de producción automatizadas.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 2 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\humanoide.jpg" alt="Robot humanoide" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Humanoides</h3>
+                    <p>Robots diseñados para imitar la forma y movimientos humanos.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 3 -->
+            <div class="gallery-item fade-in" data-category="medica">
+                <img src="\imagenes\robot de cirugia.jpg" alt="Robot quirúrgico" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robótica Médica</h3>
+                    <p>Sistemas robóticos que ayudan en procedimientos quirúrgicos de precisión.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 4 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\busqueda y rescate.jpg" alt="Robot de exploración espacial" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Exploración Espacial</h3>
+                    <p>Rovers y robots diseñados para explorar otros planetas y entornos extremos.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 5 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\robot de servicio.jpg" alt="Robot de servicio" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots de Servicio</h3>
+                    <p>Asistentes robóticos para ayudar en tareas domésticas y de cuidado.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 6 -->
+            <div class="gallery-item fade-in" data-category="educacion">
+                <img src="\imagenes\educacion.jpg" alt="Educación en robótica" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Educación Robótica</h3>
+                    <p>Kits educativos para enseñar programación y robótica a estudiantes.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 7 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\automatizacion industrial.jpg" alt="Automatización industrial" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Automatización Industrial</h3>
+                    <p>Robots que mejoran la eficiencia en procesos de fabricación.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 8 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\sociales.jpg" alt="Robot social" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Sociales</h3>
+                    <p>Diseñados para interactuar con humanos en entornos sociales.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 9 -->
+            <div class="gallery-item fade-in" data-category="medica">
+                <img src="\imagenes\rehabilitacion.jpg" alt="Prótesis robótica" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Prótesis Robóticas</h3>
+                    <p>Avances en extremidades artificiales controladas por señales neurales.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 10 -->
+            <div class="gallery-item fade-in" data-category="educacion">
+                <img src="\imagenes\robotica para niños.jpg" alt="Robótica educativa" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robótica para Niños</h3>
+                    <p>Enseñando conceptos STEM a través de la construcción de robots.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 11 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\soldadura.jpg" alt="Robot de soldadura" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots de Soldadura</h3>
+                    <p>Automatización de procesos de soldadura en la industria automotriz.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 12 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\entrenimiento.jpg" alt="Robot de entretenimiento" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots de Entretenimiento</h3>
+                    <p>Utilizados en parques temáticos y eventos para entretener al público.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 13 -->
+            <div class="gallery-item fade-in" data-category="medica">
+                <img src="\imagenes\rehabilitacion.jpg" alt="Robot de rehabilitación" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Rehabilitación Robótica</h3>
+                    <p>Sistemas que ayudan en la recuperación de movilidad tras lesiones.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 14 -->
+            <div class="gallery-item fade-in" data-category="educacion">
+                <img src="\imagenes\competencia.jpg" alt="Competencia de robótica" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Competiciones de Robótica</h3>
+                    <p>Eventos donde estudiantes demuestran sus habilidades en robótica.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 15 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\logistica.jpg" alt="Robot de logística" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Logísticos</h3>
+                    <p>Automatización en almacenes y centros de distribución.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 16 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\artista.jpg" alt="Robot artista" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Artistas</h3>
+                    <p>Máquinas capaces de crear obras de arte y composiciones musicales.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 17 -->
+            <div class="gallery-item fade-in" data-category="medica">
+                <img src="\imagenes\telemedicina.jpg" alt="Telemedicina robótica" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Telemedicina Robótica</h3>
+                    <p>Robots que permiten a los médicos examinar pacientes a distancia.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 18 -->
+            <div class="gallery-item fade-in" data-category="educacion">
+                <img src="\imagenes\laboratorio.jpg" alt="Laboratorio de robótica" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Laboratorios de Robótica</h3>
+                    <p>Espacios dedicados a la investigación y desarrollo en robótica.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 19 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\inspeccion.jpg" alt="Robot de inspección" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots de Inspección</h3>
+                    <p>Utilizados para examinar infraestructuras en entornos peligrosos.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 20 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\sociales.jpg" alt="Robot de compañía" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots de Compañía</h3>
+                    <p>Diseñados para proporcionar compañía y asistencia a personas mayores.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 21 -->
+            <div class="gallery-item fade-in" data-category="medica">
+                <img src="\imagenes\diagnostico.jpg" alt="Robot de diagnóstico" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Diagnóstico Robótico</h3>
+                    <p>Sistemas que ayudan en el análisis y diagnóstico de enfermedades.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 22 -->
+            <div class="gallery-item fade-in" data-category="educacion">
+                <img src="\imagenes\robot en el aula.jpg" alt="Robot en aula" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots en el Aula</h3>
+                    <p>Asistentes de enseñanza que interactúan con estudiantes.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 23 -->
+            <div class="gallery-item fade-in" data-category="industrial">
+                <img src="\imagenes\agricola.jpg" alt="Robot agrícola" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Agrícolas</h3>
+                    <p>Automatización en la siembra, cosecha y cuidado de cultivos.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 24 -->
+            <div class="gallery-item fade-in" data-category="humanoide">
+                <img src="\imagenes\robot deportivo.jpg" alt="Robot deportivo" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Robots Deportivos</h3>
+                    <p>Compañeros de entrenamiento y asistencia en prácticas deportivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Robótica: Innovación y Futuro.</p>
+    </footer>
+    
+    <script>
+        // Animación de aparición al hacer scroll
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.fade-in').forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < window.innerHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+        });
+        
+        // Disparar el evento scroll al cargar la página para mostrar elementos visibles inicialmente
+        window.addEventListener('load', () => {
+            window.dispatchEvent(new Event('scroll'));
+        });
+        
+        // Filtrado por categorías
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Añadir clase active al botón clickeado
+                button.classList.add('active');
+                
+                const category = button.getAttribute('data-category');
+                
+                // Mostrar/ocultar elementos según la categoría
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
